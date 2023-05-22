@@ -53,6 +53,7 @@
 		F93B0BCD2A1B4CA900D6E803 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F93B0BD12A1B50E300D6E803 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F93B0BD52A1B533B00D6E803 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F9CA3DB12A1B6B4000A01C0B /* ExampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExampleApp.xcodeproj; path = ExampleApp/ExampleApp.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		263C78512A1B3D5500426F1E = {
 			isa = PBXGroup;
 			children = (
+				F9CA3DB72A1B6B5800A01C0B /* Example */,
 				263C785D2A1B3D5500426F1E /* ios_sdk */,
 				263C78692A1B3D5600426F1E /* ios_sdkTests */,
 				263C785C2A1B3D5500426F1E /* Products */,
@@ -199,6 +201,14 @@
 				F93B0BD52A1B533B00D6E803 /* Model.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		F9CA3DB72A1B6B5800A01C0B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F9CA3DB12A1B6B4000A01C0B /* ExampleApp.xcodeproj */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
