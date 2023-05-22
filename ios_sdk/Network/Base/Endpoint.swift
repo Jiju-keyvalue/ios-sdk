@@ -20,7 +20,7 @@ extension Endpoint {
   }
   
   var host: String {
-    return "65.0.64.222:9000"
+    return "host name"
   }
   
 }
