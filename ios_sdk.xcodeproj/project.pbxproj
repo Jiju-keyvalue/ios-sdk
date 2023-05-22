@@ -11,7 +11,7 @@
 		263C78662A1B3D5600426F1E /* ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C785B2A1B3D5500426F1E /* ios_sdk.framework */; };
 		263C786B2A1B3D5600426F1E /* ios_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C786A2A1B3D5600426F1E /* ios_sdkTests.swift */; };
 		263C786C2A1B3D5600426F1E /* ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 263C785E2A1B3D5500426F1E /* ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F93B0BB42A1B4B3A00D6E803 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B0BB32A1B4B3A00D6E803 /* Main.swift */; };
+		F93B0BB42A1B4B3A00D6E803 /* MSD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B0BB32A1B4B3A00D6E803 /* MSD.swift */; };
 		F93B0BBB2A1B4B4A00D6E803 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B0BB62A1B4B4900D6E803 /* Presenter.swift */; };
 		F93B0BBC2A1B4B4A00D6E803 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B0BB82A1B4B4A00D6E803 /* Request.swift */; };
 		F93B0BC32A1B4C3700D6E803 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B0BBF2A1B4C3700D6E803 /* HTTPClient.swift */; };
@@ -33,6 +33,13 @@
 			remoteGlobalIDString = 263C785A2A1B3D5500426F1E;
 			remoteInfo = ios_sdk;
 		};
+		F9CA3DBB2A1B6DC400A01C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CA3DB12A1B6B4000A01C0B /* ExampleApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9CA3D9A2A1B6B3E00A01C0B;
+			remoteInfo = ExampleApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +48,7 @@
 		263C785F2A1B3D5500426F1E /* ios_sdk.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ios_sdk.docc; sourceTree = "<group>"; };
 		263C78652A1B3D5600426F1E /* ios_sdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_sdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		263C786A2A1B3D5600426F1E /* ios_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_sdkTests.swift; sourceTree = "<group>"; };
-		F93B0BB32A1B4B3A00D6E803 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		F93B0BB32A1B4B3A00D6E803 /* MSD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSD.swift; sourceTree = "<group>"; };
 		F93B0BB62A1B4B4900D6E803 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		F93B0BB82A1B4B4A00D6E803 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F93B0BBF2A1B4C3700D6E803 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -118,7 +125,7 @@
 		F93B0BB22A1B4B3A00D6E803 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F93B0BB32A1B4B3A00D6E803 /* Main.swift */,
+				F93B0BB32A1B4B3A00D6E803 /* MSD.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -211,6 +218,14 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		F9CA3DB82A1B6DC400A01C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9CA3DBC2A1B6DC400A01C0B /* ExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -290,6 +305,12 @@
 			mainGroup = 263C78512A1B3D5500426F1E;
 			productRefGroup = 263C785C2A1B3D5500426F1E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F9CA3DB82A1B6DC400A01C0B /* Products */;
+					ProjectRef = F9CA3DB12A1B6B4000A01C0B /* ExampleApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				263C785A2A1B3D5500426F1E /* ios_sdk */,
@@ -297,6 +318,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F9CA3DBC2A1B6DC400A01C0B /* ExampleApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ExampleApp.app;
+			remoteRef = F9CA3DBB2A1B6DC400A01C0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		263C78592A1B3D5500426F1E /* Resources */ = {
@@ -328,7 +359,7 @@
 				F93B0BC32A1B4C3700D6E803 /* HTTPClient.swift in Sources */,
 				F93B0BD62A1B533B00D6E803 /* Model.swift in Sources */,
 				F93B0BCC2A1B4C4D00D6E803 /* DemoService.swift in Sources */,
-				F93B0BB42A1B4B3A00D6E803 /* Main.swift in Sources */,
+				F93B0BB42A1B4B3A00D6E803 /* MSD.swift in Sources */,
 				F93B0BCE2A1B4CA900D6E803 /* Reachability.swift in Sources */,
 				F93B0BC42A1B4C3700D6E803 /* RequestMethod.swift in Sources */,
 				263C78602A1B3D5500426F1E /* ios_sdk.docc in Sources */,

@@ -13,7 +13,23 @@
 		F9CA3DA52A1B6B3E00A01C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA3DA32A1B6B3E00A01C0B /* Main.storyboard */; };
 		F9CA3DA72A1B6B4000A01C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CA3DA62A1B6B4000A01C0B /* Assets.xcassets */; };
 		F9CA3DAA2A1B6B4000A01C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA3DA82A1B6B4000A01C0B /* LaunchScreen.storyboard */; };
+		F9CA3DBF2A1B71A100A01C0B /* ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CA3DBE2A1B71A100A01C0B /* ios_sdk.framework */; };
+		F9CA3DC02A1B71A100A01C0B /* ios_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9CA3DBE2A1B71A100A01C0B /* ios_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9CA3DC12A1B71A100A01C0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9CA3DC02A1B71A100A01C0B /* ios_sdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F9CA3D9A2A1B6B3E00A01C0B /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		F9CA3DA62A1B6B4000A01C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9CA3DA92A1B6B4000A01C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9CA3DAB2A1B6B4000A01C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CA3DBE2A1B71A100A01C0B /* ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CA3DBF2A1B71A100A01C0B /* ios_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				F9CA3D9C2A1B6B3E00A01C0B /* ExampleApp */,
 				F9CA3D9B2A1B6B3E00A01C0B /* Products */,
+				F9CA3DBD2A1B71A100A01C0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = ExampleApp;
 			sourceTree = "<group>";
 		};
+		F9CA3DBD2A1B71A100A01C0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9CA3DBE2A1B71A100A01C0B /* ios_sdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				F9CA3D962A1B6B3E00A01C0B /* Sources */,
 				F9CA3D972A1B6B3E00A01C0B /* Frameworks */,
 				F9CA3D982A1B6B3E00A01C0B /* Resources */,
+				F9CA3DC12A1B71A100A01C0B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
