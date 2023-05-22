@@ -5,6 +5,17 @@
 //  Created by Julien on 22/05/23.
 //
 
+/**
+ 200    Successful
+ 401    Unauthorized Access
+ 400    Bad Request - Any issues with the input payload
+ 404    Entity is not available.
+ 422    Unable to process the request: If we are unable to process the request.
+ 500    Internal Server Error
+ 502    Bad Gateway
+ 504    Gateway Timeout
+ */
+
 enum RequestError: Error {
   case noInternet
   case invalidURL
